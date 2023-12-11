@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-uchet-med-zueva7-сотрудники-e",
+  "editForm": "i-i-s-uchet-med-zueva7-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISUchetMedZueva7СотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

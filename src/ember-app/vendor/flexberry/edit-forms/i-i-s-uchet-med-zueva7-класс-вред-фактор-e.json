@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Класс вред фактор",
+  "name": "IISUchetMedZueva7КлассВредФакторE",
+  "className": "КлассВредФакторE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-класс-вред-фактор",
+      "modelProjection": "КлассВредФакторE"
+    }
+  ]
+}

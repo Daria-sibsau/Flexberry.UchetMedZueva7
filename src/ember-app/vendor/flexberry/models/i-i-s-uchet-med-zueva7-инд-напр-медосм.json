@@ -1,0 +1,257 @@
+﻿{
+  "name": "IISUchetMedZueva7ИндНапрМедосм",
+  "modelName": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
+  "className": "ИндНапрМедосм",
+  "nameSpace": "IIS.UchetMedZueva7",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "медУчреждение",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организации",
+      "relatedTo": "i-i-s-uchet-med-zueva7-организации",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "вреднФактПроиз",
+      "relatedTo": "i-i-s-uchet-med-zueva7-вредн-факт-произ",
+      "inverse": "индНапрМедосм"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ИндНапрМедосмE",
+      "modelName": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер документа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "медУчреждение",
+          "caption": "Медицинское учреждение",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организации",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование организации",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование организации",
+          "name": "организации",
+          "relatedTo": "i-i-s-uchet-med-zueva7-организации",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудники.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 8
+                },
+                {
+                  "name": "подразделение",
+                  "caption": "Подразделение",
+                  "hidden": false,
+                  "index": 9
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-uchet-med-zueva7-должности",
+              "inverse": null
+            }
+          ],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия сотрудника",
+              "hidden": true,
+              "index": 4
+            },
+            {
+              "name": "имя",
+              "caption": "Имя сотрудника",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "отчество",
+              "caption": "Отчество сотрудника",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "датаРождения",
+              "caption": "Дата рождения",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия сотрудника",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ВреднФактПроизE",
+          "caption": "Вредные факторы производства",
+          "name": "вреднФактПроиз",
+          "relatedTo": "i-i-s-uchet-med-zueva7-вредн-факт-произ",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ИндНапрМедосмL",
+      "modelName": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "медУчреждение",
+          "caption": "Мед учреждение",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организации",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организации",
+          "relatedTo": "i-i-s-uchet-med-zueva7-организации",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>UchetMedZueva7.model.KontingentSotr</class>
+        <class>UchetMedZueva7.model.SpisokNaMedosm</class>
+        <class>UchetMedZueva7.model.VrednFaktProiz</class>
+        <class>UchetMedZueva7.model.KlassVredFaktor</class>
+        <class>UchetMedZueva7.model.Dolzhnosti</class>
+        <class>UchetMedZueva7.model.Organizacii</class>
+        <class>UchetMedZueva7.model.Sotrudniki</class>
+        <class>UchetMedZueva7.model.IndNaprMedosm</class>
+        <class>UchetMedZueva7.model.PrikazMZR</class>
+        <class>UchetMedZueva7.model.FlexberryAdvLimit</class>
+        <class>UchetMedZueva7.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>UchetMedZueva7.model.NewPlatformFlexberryServicesLock</class>
+        <class>UchetMedZueva7.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

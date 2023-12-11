@@ -1,0 +1,1 @@
+docker-compose -p uchetmedzueva7-java up -d

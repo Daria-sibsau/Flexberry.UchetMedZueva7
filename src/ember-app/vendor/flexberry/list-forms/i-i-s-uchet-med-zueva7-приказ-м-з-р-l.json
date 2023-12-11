@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-uchet-med-zueva7-приказ-м-з-р-e",
+  "editForm": "i-i-s-uchet-med-zueva7-приказ-м-з-р-e",
+  "external": false,
+  "caption": "Приказ МЗР",
+  "name": "IISUchetMedZueva7ПриказМЗРL",
+  "className": "ПриказМЗРL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-приказ-м-з-р",
+      "modelProjection": "ПриказМЗРL"
+    }
+  ]
+}

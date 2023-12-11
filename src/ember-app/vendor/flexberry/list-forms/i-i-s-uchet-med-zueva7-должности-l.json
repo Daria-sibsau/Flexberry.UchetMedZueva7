@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-uchet-med-zueva7-должности-e",
+  "editForm": "i-i-s-uchet-med-zueva7-должности-e",
+  "external": false,
+  "caption": "Должности",
+  "name": "IISUchetMedZueva7ДолжностиL",
+  "className": "ДолжностиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-должности",
+      "modelProjection": "ДолжностиL"
+    }
+  ]
+}

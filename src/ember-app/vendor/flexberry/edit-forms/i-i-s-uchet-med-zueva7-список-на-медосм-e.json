@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Список на медосм",
+  "name": "IISUchetMedZueva7СписокНаМедосмE",
+  "className": "СписокНаМедосмE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-список-на-медосм",
+      "modelProjection": "СписокНаМедосмE"
+    }
+  ]
+}

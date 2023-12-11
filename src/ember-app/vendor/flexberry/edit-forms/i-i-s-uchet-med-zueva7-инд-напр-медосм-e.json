@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Инд напр медосм",
+  "name": "IISUchetMedZueva7ИндНапрМедосмE",
+  "className": "ИндНапрМедосмE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
+      "modelProjection": "ИндНапрМедосмE"
+    }
+  ]
+}

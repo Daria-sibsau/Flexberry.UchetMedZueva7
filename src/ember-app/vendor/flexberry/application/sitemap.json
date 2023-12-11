@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Uchet med zueva7",
+  "applicationTitle": "Uchet med zueva7",
+  "items": [
+    {
+      "link": null,
+      "menuName": "uchet-med-zueva7",
+      "caption": "UchetMedZueva7",
+      "title": "UchetMedZueva7",
+      "children": [
+        {
+          "link": "i-i-s-uchet-med-zueva7-список-на-медосм-l",
+          "menuName": null,
+          "caption": "Список на медосм",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-класс-вред-фактор-l",
+          "menuName": null,
+          "caption": "Класс вред фактор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-организации-l",
+          "menuName": null,
+          "caption": "Организации",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-инд-напр-медосм-l",
+          "menuName": null,
+          "caption": "Инд напр медосм",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-uchet-med-zueva7-приказ-м-з-р-l",
+          "menuName": null,
+          "caption": "Приказ МЗР",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

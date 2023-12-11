@@ -1,0 +1,123 @@
+<h3 class="ui header">{{t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.номер-caption")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.медУчреждение
+      class=(if (v-get validationModel "медУчреждение" "isInvalid") "error")
+      label=(t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.медУчреждение-caption")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-медУчреждение=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "медУчреждение" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудники.имя
+      class=(if (v-get validationModel.сотрудники "имя" "isInvalid") "error")
+      label=(t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.сотрудники.имя-caption")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-сотрудники-имя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники "имя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудники.отчество
+      class=(if (v-get validationModel.сотрудники "отчество" "isInvalid") "error")
+      label=(t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.сотрудники.отчество-caption")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-сотрудники-отчество=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники "отчество" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.сотрудники.датаРождения-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=true
+      value=model.сотрудники.датаРождения
+      class=(if (v-get validationModel.сотрудники "датаРождения" "isInvalid") "error")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-сотрудники-датаРождения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники "датаРождения" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудники.должности.наименование
+      class=(if (v-get validationModel.сотрудники.должности "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.сотрудники.должности.наименование-caption")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-сотрудники-должности-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники.должности "наименование" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-сотрудники-должности-подразделение="true">
+    <label>{{t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.сотрудники.должности.подразделение-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-uchet-med-zueva7-подразделения")
+      value=model.сотрудники.должности.подразделение
+      class=(if (v-get validationModel.сотрудники.должности "подразделение" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудники.должности "подразделение" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-uchet-med-zueva7-инд-напр-медосм-e.вреднФактПроиз-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="вреднФактПроизGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.вреднФактПроиз
+      content=model.вреднФактПроиз
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "вреднФактПроиз" "isInvalid") "error")
+      data-test-i-i-s-uchet-med-zueva7-инд-напр-медосм-e-вреднФактПроиз=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "вреднФактПроиз" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-uchet-med-zueva7-организации-e",
+  "editForm": "i-i-s-uchet-med-zueva7-организации-e",
+  "external": false,
+  "caption": "Организации",
+  "name": "IISUchetMedZueva7ОрганизацииL",
+  "className": "ОрганизацииL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-организации",
+      "modelProjection": "ОрганизацииL"
+    }
+  ]
+}

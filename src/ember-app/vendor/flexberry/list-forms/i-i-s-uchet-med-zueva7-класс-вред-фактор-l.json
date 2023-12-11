@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-uchet-med-zueva7-класс-вред-фактор-e",
+  "editForm": "i-i-s-uchet-med-zueva7-класс-вред-фактор-e",
+  "external": false,
+  "caption": "Класс вред фактор",
+  "name": "IISUchetMedZueva7КлассВредФакторL",
+  "className": "КлассВредФакторL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-uchet-med-zueva7-класс-вред-фактор",
+      "modelProjection": "КлассВредФакторL"
+    }
+  ]
+}

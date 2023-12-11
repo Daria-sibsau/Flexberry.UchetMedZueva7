@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.UchetMedZueva7",
+  "className": "ПериодМед",
+  "enumObjects": {
+    "1разВГод": "1разВГод",
+    "1разВ2Года": "1разВ2Года"
+  }
+}

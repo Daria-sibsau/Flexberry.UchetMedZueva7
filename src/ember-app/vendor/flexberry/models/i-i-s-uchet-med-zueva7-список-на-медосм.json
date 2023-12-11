@@ -1,0 +1,175 @@
+﻿{
+  "name": "IISUchetMedZueva7СписокНаМедосм",
+  "modelName": "i-i-s-uchet-med-zueva7-список-на-медосм",
+  "className": "СписокНаМедосм",
+  "nameSpace": "IIS.UchetMedZueva7",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "контингентСотр",
+      "relatedTo": "i-i-s-uchet-med-zueva7-контингент-сотр",
+      "inverse": "списокНаМедосм"
+    }
+  ],
+  "projections": [
+    {
+      "name": "СписокНаМедосмE",
+      "modelName": "i-i-s-uchet-med-zueva7-список-на-медосм",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудники.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-uchet-med-zueva7-должности",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия ОЛ",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "имя",
+              "caption": "Имя ОЛ",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "отчество",
+              "caption": "Отчество ОЛ",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия ОЛ",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "КонтингентСотрE",
+          "caption": "Контингент сотрудников",
+          "name": "контингентСотр",
+          "relatedTo": "i-i-s-uchet-med-zueva7-контингент-сотр",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СписокНаМедосмL",
+      "modelName": "i-i-s-uchet-med-zueva7-список-на-медосм",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-uchet-med-zueva7-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

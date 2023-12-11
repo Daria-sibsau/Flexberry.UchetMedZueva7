@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISUchetMedZueva7ВреднФактПроиз",
+  "modelName": "i-i-s-uchet-med-zueva7-вредн-факт-произ",
+  "className": "ВреднФактПроиз",
+  "nameSpace": "IIS.UchetMedZueva7",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "классВредФактор",
+      "relatedTo": "i-i-s-uchet-med-zueva7-класс-вред-фактор",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "индНапрМедосм",
+      "relatedTo": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
+      "inverse": "вреднФактПроиз"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВреднФактПроизE",
+      "modelName": "i-i-s-uchet-med-zueva7-вредн-факт-произ",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер пункта",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КлассВредФактор",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер",
+          "name": "классВредФактор",
+          "relatedTo": "i-i-s-uchet-med-zueva7-класс-вред-фактор",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
