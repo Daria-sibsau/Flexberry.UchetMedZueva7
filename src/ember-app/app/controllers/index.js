@@ -22,30 +22,31 @@ export default Controller.extend({
             link: 'i-i-s-uchet-med-zueva7-список-на-медосм-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-список-на-медосм-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-список-на-медосм-l.title'),
-            icon: 'edit',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-uchet-med-zueva7-класс-вред-фактор-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-класс-вред-фактор-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-класс-вред-фактор-l.title'),
-            icon: 'briefcase',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-uchet-med-zueva7-должности-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-должности-l.title'),
-            icon: 'address card',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-uchet-med-zueva7-организации-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-организации-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-организации-l.title'),
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-uchet-med-zueva7-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-сотрудники-l.title'),
-            icon: 'file',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-uchet-med-zueva7-инд-напр-медосм-l',
@@ -57,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-uchet-med-zueva7-приказ-м-з-р-l',
             caption: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-приказ-м-з-р-l.caption'),
             title: i18n.t('forms.application.sitemap.uchet-med-zueva7.i-i-s-uchet-med-zueva7-приказ-м-з-р-l.title'),
-            icon: 'table',
+            icon: 'tags',
             children: null
           }]
         }

@@ -196,7 +196,6 @@ namespace IIS.UchetMedZueva7
         public virtual void Отправить()
         {
             // *** Start programmer edit section *** (СписокНаМедосм.Отправить method implementation)
-
             return;
             // *** End programmer edit section *** (СписокНаМедосм.Отправить method implementation)
         }
@@ -208,7 +207,6 @@ namespace IIS.UchetMedZueva7
         public virtual void Печать()
         {
             // *** Start programmer edit section *** (СписокНаМедосм.Печать method implementation)
-
             return;
             // *** End programmer edit section *** (СписокНаМедосм.Печать method implementation)
         }

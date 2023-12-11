@@ -29,16 +29,16 @@ namespace IIS.UchetMedZueva7
     public enum ПериодМед
     {
         
-        // *** Start programmer edit section *** (ПериодМед.1разВГод CustomAttributes)
+        // *** Start programmer edit section *** (ПериодМед.РазВГод CustomAttributes)
 
-        // *** End programmer edit section *** (ПериодМед.1разВГод CustomAttributes)
-        [Caption("1разВГод")]
-        1разВГод,
+        // *** End programmer edit section *** (ПериодМед.РазВГод CustomAttributes)
+        [Caption("РазВГод")]
+        РазВГод,
         
-        // *** Start programmer edit section *** (ПериодМед.1разВ2Года CustomAttributes)
+        // *** Start programmer edit section *** (ПериодМед.РазВДваГода CustomAttributes)
 
-        // *** End programmer edit section *** (ПериодМед.1разВ2Года CustomAttributes)
-        [Caption("1разВ2Года")]
-        1разВ2Года,
+        // *** End programmer edit section *** (ПериодМед.РазВДваГода CustomAttributes)
+        [Caption("РазВДваГода")]
+        РазВДваГода,
     }
 }
