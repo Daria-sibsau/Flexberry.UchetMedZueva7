@@ -104,6 +104,46 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
+        'формирование-документов': {
+          caption: 'Формирование документов',
+          title: 'Формирование документов',
+          'i-i-s-uchet-med-zueva7-список-на-медосм-l': {
+            caption: 'Список на медосм',
+            title: ''
+          },
+          'i-i-s-uchet-med-zueva7-инд-напр-медосм-l': {
+            caption: 'Инд напр медосм',
+            title: ''
+          }
+        },
+        'организация-и-штат-сотрудников': {
+          caption: 'Организация и штат сотрудников',
+          title: 'Организация и штат сотрудников',
+          'i-i-s-uchet-med-zueva7-должности-l': {
+            caption: 'Должности',
+            title: ''
+          },
+          'i-i-s-uchet-med-zueva7-сотрудники-l': {
+            caption: 'Сотрудники',
+            title: ''
+          },
+          'i-i-s-uchet-med-zueva7-организации-l': {
+            caption: 'Организации',
+            title: ''
+          }
+        },
+        'производственная-информация': {
+          caption: 'Производственная информация',
+          title: 'Производственная информация',
+          'i-i-s-uchet-med-zueva7-приказ-м-з-р-l': {
+            caption: 'Приказ МЗР',
+            title: ''
+          },
+          'i-i-s-uchet-med-zueva7-класс-вред-фактор-l': {
+            caption: 'Класс вред фактор',
+            title: ''
+          }
+        },
         'uchet-med-zueva7': {
           caption: 'UchetMedZueva7',
           title: 'UchetMedZueva7',

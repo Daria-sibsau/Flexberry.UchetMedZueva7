@@ -40,7 +40,7 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('ДолжностиL', 'i-i-s-uchet-med-zueva7-должности', {
-    iDДолжности: attr('I d должности', { index: 0 }),
+    iDДолжности: attr('ID должности', { index: 0 }),
     наименование: attr('Наименование', { index: 1 }),
     подразделение: attr('Подразделение', { index: 2 })
   });

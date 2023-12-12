@@ -85,14 +85,14 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('ИндНапрМедосмL', 'i-i-s-uchet-med-zueva7-инд-напр-медосм', {
-    дата: attr('Дата', { index: 0 }),
-    номер: attr('Номер', { index: 1 }),
-    медУчреждение: attr('Мед учреждение', { index: 2 }),
+    номер: attr('Номер документа', { index: 0 }),
+    дата: attr('Дата', { index: 1 }),
+    медУчреждение: attr('Медицинское учреждение', { index: 2 }),
     сотрудники: belongsTo('i-i-s-uchet-med-zueva7-сотрудники', 'Фамилия', {
       фамилия: attr('Фамилия', { index: 3 })
     }, { index: -1, hidden: true }),
-    организации: belongsTo('i-i-s-uchet-med-zueva7-организации', 'Наименование', {
-      наименование: attr('Наименование', { index: 4 })
+    организации: belongsTo('i-i-s-uchet-med-zueva7-организации', 'Наименование организации', {
+      наименование: attr('Наименование организации', { index: 4 })
     }, { index: -1, hidden: true })
   });
 };

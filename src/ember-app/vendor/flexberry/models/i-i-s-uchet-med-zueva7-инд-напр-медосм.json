@@ -186,20 +186,20 @@
       "modelName": "i-i-s-uchet-med-zueva7-инд-напр-медосм",
       "attrs": [
         {
-          "name": "дата",
-          "caption": "Дата",
+          "name": "номер",
+          "caption": "Номер документа",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "номер",
-          "caption": "Номер",
+          "name": "дата",
+          "caption": "Дата",
           "hidden": false,
           "index": 1
         },
         {
           "name": "медУчреждение",
-          "caption": "Мед учреждение",
+          "caption": "Медицинское учреждение",
           "hidden": false,
           "index": 2
         }
@@ -235,14 +235,14 @@
           "attrs": [
             {
               "name": "наименование",
-              "caption": "Наименование",
+              "caption": "Наименование организации",
               "hidden": false,
               "index": 4
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "Наименование",
+          "caption": "Наименование организации",
           "name": "организации",
           "relatedTo": "i-i-s-uchet-med-zueva7-организации",
           "inverse": null
